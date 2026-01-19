@@ -19,30 +19,64 @@
 <body>
     <div class="noise" aria-hidden="true"></div>
 
+    <div class="snow" aria-hidden="true">
+        <span class="snowflake">❄</span><span class="snowflake">✻</span><span class="snowflake">❄</span><span
+            class="snowflake">✼</span>
+        <span class="snowflake">❄</span><span class="snowflake">✻</span><span class="snowflake">❄</span><span
+            class="snowflake">✼</span>
+        <span class="snowflake">❄</span><span class="snowflake">✻</span><span class="snowflake">❄</span><span
+            class="snowflake">✼</span>
+        <span class="snowflake">❄</span><span class="snowflake">✻</span><span class="snowflake">❄</span><span
+            class="snowflake">✼</span>
+        <span class="snowflake">❄</span><span class="snowflake">✻</span><span class="snowflake">❄</span><span
+            class="snowflake">✼</span>
+    </div>
+
     <div class="wrap">
         <div class="card">
             <header class="centered-header">
                 <h1>Это FrostD</h1>
                 <p class="subtitle">или FrostedTick</p>
+
+                <p class="snow-text">И тут всегда идет снег!</p>
+
                 <div class="divider"></div>
             </header>
 
-
             <main>
+                <section class="section">
+                    <h2 class="section-title">Что это и зачем нужно?</h2>
+                    <p class="section-text">
+                        FrostD - система сервисов с удобным и понятным интерьфейсом сделанная для упрощения жизни.
+                    </p>
+                </section>
+
                 <div class="actions">
-                    <a class="hw-btn no-copy" href="https://t.me/artemys435" target="_blank">
-                        <img src="/icons/telegram.png" class="btn-icon">
+                    <a class="hw-btn no-copy" href="https://t.me/artemys435" target="_blank" rel="noopener">
+                        <img src="/icons/telegram.png" class="btn-icon" alt="">
                         Telegram
                     </a>
 
-                    <a class="hw-btn no-copy" href="https://max.ru/u/f9LHodD0cOIfDDEYnmD4NMv4lEidUO-zVvd1UWeUVRX3Yu4lHCVYj82-x3M" target="_blank">
-                        <img style="border-radius: 30%;" src="/icons/max.png" class="btn-icon">
+                    <a class="hw-btn no-copy"
+                        href="https://max.ru/u/f9LHodD0cOIfDDEYnmD4NMv4lEidUO-zVvd1UWeUVRX3Yu4lHCVYj82-x3M"
+                        target="_blank" rel="noopener">
+                        <img style="border-radius: 30%;" src="/icons/max.png" class="btn-icon" alt="">
                         Max
                     </a>
                 </div>
+                <footer class="footer">
+                    <div class="divider"></div>
+                    <p class="footer-text">
+                        © <span id="year"></span> FrostD • Сделано со снегом ❄
+                    </p>
+                </footer>
             </main>
         </div>
     </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
